@@ -9,10 +9,10 @@ class ResearchManager:
 
     async def run(self, query: str):
         """ Run the deep research process, yielding the status updates and the final report"""
-        trace_id = gen_trace_id()
-        with trace("Research trace", trace_id=trace_id):
-            print(f"View trace: https://platform.openai.com/traces/trace?trace_id={trace_id}")
-            yield f"View trace: https://platform.openai.com/traces/trace?trace_id={trace_id}"
+        #trace_id = gen_trace_id()
+        with trace("Research trace"):
+            #print(f"View trace: https://platform.openai.com/traces/trace?trace_id={trace_id}")
+            #yield f"View trace: https://platform.openai.com/traces/trace?trace_id={trace_id}"
             print("Starting research...")
             search_plan = await self.plan_searches(query)
             yield "Searches planned, starting to search..."     

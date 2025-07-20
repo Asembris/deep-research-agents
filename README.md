@@ -5,7 +5,7 @@ Runs multiple specialized agents (planner, search, writer, email) to automate re
 
 ## 📁 Structure
 
-- **agents/** – individual agent definitions  
+- **local_agents/** – individual agent definitions  
 - **deep_research.py** – main entrypoint (run with `uvicorn deep_research:app --reload`)  
 - **requirements.txt** – Python dependencies  
 
@@ -13,5 +13,5 @@ Runs multiple specialized agents (planner, search, writer, email) to automate re
 
 1. **Clone**  
    ```bash
-   git clone https://github.com/<your‑org>/deep-research-app.git
+   git clone https://github.com/Asembris/deep-research-agents
    cd deep-research-app
